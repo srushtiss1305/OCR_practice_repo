@@ -7,7 +7,7 @@ from datetime import datetime
 from werkzeug.utils import secure_filename
 
 from preprocess import pdf_to_images, deskew_image, preprocess_image
-from paddleocr import run_ocr
+from paddle_ocr import *
 from postprocess import clean_text
 
 # -------------------- APP INIT --------------------
@@ -17,7 +17,7 @@ CORS(app)
 # -------------------- PATHS --------------------
 BASE_DIR = os.getcwd()
 UPLOAD_FOLDER = os.path.join(BASE_DIR, "uploads")
-OUTPUT_FOLDER = os.path.join(BASE_DIR, "processed_images")
+OUTPUT_FOLDER = os.path.join(BASE_DIR, "processed_images", "outputs")
 
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
@@ -30,7 +30,7 @@ def allowed_file(filename):
 
 
 def generate_transaction_id():
-    return f"txn_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{uuid.uuid4().hex[:8]}"
+    return f"txn_{uuid.uuid4().hex[:8]}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 
 # -------------------- ROUTES --------------------
 @app.route("/upload", methods=["POST"])

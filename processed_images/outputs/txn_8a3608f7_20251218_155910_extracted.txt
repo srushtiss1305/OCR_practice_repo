@@ -1,0 +1,284 @@
+Invoice
+Invoice Summary
+HYUnDAI
+Golden Mandhir Retail Pvt.Ltd.
+S4226
+Jagir amma palayam, No:151 SALEM
+Tel:9659511171
+Fax:
+9659511171
+Customer ID:C2022020052
+GSTNo33AAFCG1079B1Z3
+Reg.No
+TN879470
+Invoice No
+B202512297
+VIJAYA KUMAR
+VIN
+MALA741CLJM314234
+Date
+SALEM
+28.11.2025
+Mileage
+184219
+R/O no
+R202511753
+State TAMIL NADU
+636030
+Place of Supply
+Tamilnadu
+Payment
+Pin
+Credit
+33AAACT0627R3Z4
+Mobile No 9786066444
+Email Idvijaykumar@gmail.com
+S.No Part/OP code
+Part Labor Description
+HSN/SAC Tax%
+Qty
+Rate/Unit
+Cust.Amt Ins.Amt
+HMI.Amt MOBIS.A Disc Amt Amount
+Part Invoice
+86513B4500
+BRACKET-FR BUMPER
+8708990
+18%
+1.0066.94
+66.94
+0.00
+0.00
+0.00
+0.00
+66.94
+SIDE.LH
+64101B4901
+CARRIER ASSY-FRONT
+870899018%
+1.006,448.30
+6,448.300.00
+0.00
+0.00
+0.00
+6,448.30
+END MODULE
+86511B4800
+COVER-FR BUMPER
+870899018%
+1.001,376.28
+1,376.28
+0.00
+0.00
+0.00
+0.00
+1,376.28
+86567B4800
+DUCT ASSY-AIR
+8708990
+18%
+1.00161.02
+161.02
+0.00
+0.00
+0.00
+0.00
+161.02
+CURTAIN.LH
+86568B4800
+DUCT ASSY-AIR
+870899018%
+1.00161.02
+161.02
+0.00
+0.00
+0.00
+0.00
+161.02
+CURTAIN.RH
+ENGINE COOLANT-1
+ACS98AP001
+3820000
+18%
+1.00334.74
+334.74
+0.00
+0.00
+0.00
+0.00
+334.74
+LITRE
+86560B4800
+GRILLE-FRONT BUMPER
+8708990
+18%
+1.001,473.72
+1,473.72
+0.00
+0.00
+0.00
+0.00
+1,473.72
+86811B4700
+GUARD ASSY-FRONT
+8708990
+18%
+1.00643.22
+643.22
+0.00
+0.00
+0.00
+0.00
+643.22
+WHEEL.LH
+92201B4600
+LAMP ASSY-FRONT
+8512202
+18%
+1.001186.44
+1,186.44
+0.00
+0.00
+0.00
+0.00
+1,186.44
+FOG.LH
+10
+29130B4000
+PANEL-SIDE COVER,LH
+8708990
+18%
+1.00211.86
+211.86
+0.00
+0.00
+0.00
+0.00
+211.86
+11
+29120B4000
+PANEL-SIDE COVER,RH
+870899018%
+1.00211.86
+211.86
+0.00
+0.00
+0.00
+0.00
+211.86
+12
+29110B4500
+PANEL-UNDER COVER
+8708990
+18%
+1.00455.08
+455.08
+0.00
+0.00
+0.00
+0.00
+455.08
+FRONT
+8659028000
+13
+RETAINERASSY-BUMPER 8708990
+18%
+10.06.78
+67.82
+0.00
+0.00
+0.00
+0.00
+67.82
+COVER MTG
+Labour and Services
+Labour Invoice
+A10AAACREPLNA
+Accidental Repair Charges
+998729
+18%
+1.008,630.00
+8,630.00
+0.00
+0.00
+0.00
+8,630.00
+(Insurance)
+A10AAIASNVAS3M
+Interior Antimicrobial
+998729
+18%
+1.00847.00
+847.00
+0.00
+0.00
+0.00
+847.00
+Treatment 3M (Optional)
+Special Comment: The below mentioned Non-genuine Fitment may hamper your safety and /or Result in Poor Performance of your vehicle .
+HMIL is not Responsible for any untoward incident due to the same .Kindly return the vehicle to its Original Condition as per HMIL specification
+Part Amount
+Labor Amount
+Sub Total
+12,798.30
+9,477.00
+Coupon Discount
+0.00
+0.00
+TCS Tax
+0.00
+Discount
+0.00
+0.00
+AMC Discount
+0.00
+0.00
+Observation :
+CGST @ 9% on Labor value of 9477
+0.00
+852.93
+SGST @ 9% on Labor value of 9477
+0.00
+852.93
+No Accessory Fitment
+CGST@9%ON Part Value of 12798.3
+1,151.85
+0.00
+SGST@9%ON Part Value of 12798.3
+1,151.85
+0.00
+Pending Jobs :
+Workshop Referral Discount
+0.0
+0.0
+For
+Golden Mandhir Retail Pvt.Ltd.
+Total
+15,102.00
+11,182.86
+(Authorized Signatory)
+Grand Total
+(Rounded)
+26285
+Rupees Twenty-six thousand two hundred eighty-four Only
+Golden Mandhir Retail Pvt. Ltd.
+Gate Pass
+Customer
+VIJAYA KUMAR
+Reg.NoTN879470
+Date
+28.11.2025
+GPNo
+G202512291
+VINMALA741CLJM314234
+Model
+BA**C Xcent VTVT E+
+R/O no
+R202511753
+Vehicle has been received from workshop and work done as per my satisfaction.
+Payment Received from customer vehicle permitted to leave workshop
+Customer Signature
+Accountant
+Thank you for making Hyundai a Leader in Customer Service for three years in a row.
+Download Hyundai Care' App for Android and iOS and enjoy exciting benefits & offers
+#Aisi Care Nowhere
