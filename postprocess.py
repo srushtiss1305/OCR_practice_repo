@@ -9,9 +9,3 @@ def clean_text(text):
         line = re.sub(r"\s+", " ", line).strip()
         if len(line) > 1:
             cleaned.append(line)
-
-<<<<<<< HEAD
-    return "\n".join(cleaned)
-=======
-    return "\n".join(cleaned)
->>>>>>> main
