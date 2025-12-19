@@ -6,9 +6,11 @@ import traceback
 from datetime import datetime
 from werkzeug.utils import secure_filename
 
-from preprocess import pdf_to_images, deskew_image, preprocess_image
+import cv2
+import fitz  # PyMuPDF
+
 from paddle_ocr import *
-from postprocess import clean_text
+
 
 # -------------------- APP INIT --------------------
 app = Flask(__name__)
@@ -32,6 +34,24 @@ def allowed_file(filename):
 def generate_transaction_id():
     return f"txn_{uuid.uuid4().hex[:8]}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 
+
+def pdf_to_images(pdf_path):
+    """Convert PDF pages to OpenCV BGR images"""
+    images = []
+    doc = fitz.open(pdf_path)
+
+    for page in doc:
+        pix = page.get_pixmap(dpi=300)
+        img_bytes = pix.tobytes("png")
+        img_np = cv2.imdecode(
+            np.frombuffer(img_bytes, np.uint8),
+            cv2.IMREAD_COLOR
+        )
+        images.append(img_np)
+
+    return images
+
+
 # -------------------- ROUTES --------------------
 @app.route("/upload", methods=["POST"])
 def upload():
@@ -49,25 +69,27 @@ def upload():
             return jsonify({"error": "Invalid file type"}), 400
 
         filename = secure_filename(file.filename)
-        input_path = os.path.join(
-            UPLOAD_FOLDER, f"{txn_id}_{filename}"
-        )
+        input_path = os.path.join(UPLOAD_FOLDER, f"{txn_id}_{filename}")
         file.save(input_path)
 
         extracted_texts = []
 
+        # -------- PDF --------
         if input_path.lower().endswith(".pdf"):
-            pages = pdf_to_images(input_path, txn_id)
-            for page_path in pages:
-                deskewed = deskew_image(page_path, txn_id)
-                pre = preprocess_image(deskewed, txn_id)
-                extracted_texts.append(run_ocr(pre))
-        else:
-            deskewed = deskew_image(input_path, txn_id)
-            pre = preprocess_image(deskewed, txn_id)
-            extracted_texts.append(run_ocr(pre))
+            pages = pdf_to_images(input_path)
+            for img in pages:
+                text = run_paddleocr(img)
+                extracted_texts.append(text)
 
-        final_text = clean_text("\n\n".join(extracted_texts))
+        # -------- IMAGE --------
+        else:
+            img = cv2.imread(input_path)
+            if img is None:
+                return jsonify({"error": "Failed to read image"}), 400
+
+            extracted_texts.append(run_paddleocr(img))
+
+        final_text = "\n\n".join(extracted_texts)
 
         text_path = os.path.join(
             OUTPUT_FOLDER, f"{txn_id}_extracted.txt"

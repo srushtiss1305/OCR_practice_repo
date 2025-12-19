@@ -47,13 +47,14 @@ def preprocess_for_paddleocr(img_bgr):
 
 #-------------------normalization---------------
 def normalize_paddle_result(ocr_result):
-    texts = ocr_result["rec_texts"]
-    scores = ocr_result["rec_scores"]
-    polys = ocr_result["rec_polys"]
-
     boxes = []
 
-    for text, conf, poly in zip(texts, scores, polys):
+    for item in ocr_result:
+        if len(item) != 2:
+            continue
+
+        poly, (text, conf) = item
+
         if not text.strip():
             continue
 
