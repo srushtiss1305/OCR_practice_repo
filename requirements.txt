@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # -------- Web API --------
 Flask==3.0.0
 flask-cors==4.0.0
@@ -17,3 +18,13 @@ numpy==1.26.4
 
 # -------- Utils --------
 python-dateutil==2.9.0.post0
+=======
+Flask==2.3.3
+Werkzeug==2.3.7
+numpy==1.26.4
+opencv-python==4.10.0.84
+Pillow==10.3.0
+pymupdf==1.24.0
+paddlepaddle==2.6.1
+paddleocr==2.8.1
+>>>>>>> 147002938bd9a62612afb0e68446183b07ae09f0

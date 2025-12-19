@@ -1,9 +1,5 @@
-# Virtual environment
 .venv/
-
-# Python
 __pycache__/
 *.pyc
-
-# OS
-.DS_Store
+processed_images/outputs/
+uploads/
