@@ -1,5 +1,0 @@
-.venv/
-__pycache__/
-*.pyc
-processed_images/outputs/
-uploads/
