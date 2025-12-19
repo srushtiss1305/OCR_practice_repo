@@ -10,4 +10,8 @@ def clean_text(text):
         if len(line) > 1:
             cleaned.append(line)
 
+<<<<<<< HEAD
     return "\n".join(cleaned)
+=======
+    return "\n".join(cleaned)
+>>>>>>> main

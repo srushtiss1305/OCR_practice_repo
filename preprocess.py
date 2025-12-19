@@ -78,4 +78,8 @@ def preprocess_image(image_path, txn_id):
         OUTPUT_FOLDER, f"{txn_id}_preprocessed.jpg"
     )
     cv2.imwrite(out, gray)
+<<<<<<< HEAD
     return out
+=======
+    return out
+>>>>>>> main

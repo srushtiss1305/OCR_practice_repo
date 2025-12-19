@@ -31,4 +31,7 @@ def run_ocr(image_path):
                 lines.append(text)
 
     return "\n".join(lines)
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
